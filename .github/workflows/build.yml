@@ -86,7 +86,6 @@ jobs:
         run: python -m build
 
       - name: Publish Python package
-        if: github.event_name == 'release'
         env:
           PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
           PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
