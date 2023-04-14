@@ -27,7 +27,7 @@ requires = [
 build-backend = "hatchling.build"
 
 [project]
-name = "mkdocs-material"
+name = "mkdocs-material-otf"
 dynamic = [
   "version",
   "dependencies",
