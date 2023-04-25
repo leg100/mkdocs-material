@@ -34,18 +34,6 @@
     class="md-header__inner md-grid"
     aria-label="{{ lang.t('header') }}"
   >
-
-    <!-- Link to home -->
-    <a
-      href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}"
-      title="{{ config.site_name | e }}"
-      class="md-header__button md-logo"
-      aria-label="{{ config.site_name }}"
-      data-md-component="logo"
-    >
-      {% include "partials/logo.html" %}
-    </a>
-
     <!-- Button to open drawer -->
     <label class="md-header__button md-icon" for="__drawer">
       {% include ".icons/material/menu" ~ ".svg" %}
@@ -56,7 +44,15 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            {{ config.site_name }}
+            <!-- Link to home -->
+            <a
+              href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}"
+              title="{{ config.site_name | e }}"
+              class="md-header__button md-logo"
+              data-md-component="logo"
+            >
+              {% include "partials/logo.html" %}
+            </a>
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">

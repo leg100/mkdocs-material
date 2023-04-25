@@ -103,10 +103,9 @@
       padding: px2rem(8px);
       margin: px2rem(4px);
 
-      // [tablet -]: Hide button
-      @include break-to-device(tablet) {
-        display: none;
-      }
+      //@include break-to-device(tablet) {
+       // display: none;
+      //}
 
       // Image or icon
       :is(img, svg) {
@@ -182,7 +181,7 @@
   &__title {
     flex-grow: 1;
     height: px2rem(48px);
-    margin-inline-start: px2rem(20px);
+    // margin-inline-start: px2rem(20px);
     margin-inline-end: px2rem(8px);
     font-size: px2rem(18px);
     line-height: px2rem(48px);
